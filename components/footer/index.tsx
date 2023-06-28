@@ -19,7 +19,7 @@ function Footer() {
             <div key={link.title} className="footer__link">
               <h3 className="font-bold">{link.title}</h3>
               {link.links.map((item) => (
-                <Link key={item.title} href={item.url} className="text-gray-500">
+                <Link key={item.title} href={item.url} className="text-gray-500 hover:text-gray-600 hover:font-semibold duration-300">
                   {item.title}
                 </Link>
               ))}
@@ -31,10 +31,10 @@ function Footer() {
       <div className="mt-10 px-6 py-10 border-t border-gray-100 flex flex-wrap justify-between gap-5 max-md:flex-col sm:px-16">
         <p className="">@2023 Carent. All Rights Reserved</p>
         <div className="footer__copyrights-link">
-          <Link href="/" className="text-gray-500">
+          <Link href="/" className="text-gray-500 hover:text-gray-700 duration-200">
             Privacy Policy
           </Link>
-          <Link href="/" className="text-gray-500">
+          <Link href="/" className="text-gray-500 hover:text-gray-700 duration-200">
             Terms of Use
           </Link>
         </div>
