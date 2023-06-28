@@ -217,3 +217,13 @@
   @apply cursor-default select-none py-2 pl-10 pr-4;
 }
 /* END: search manufacturer styles */
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #ededed;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.75rem;
+  background-color: #b9b9b9;
+}
