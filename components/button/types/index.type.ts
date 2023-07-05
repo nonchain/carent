@@ -4,5 +4,7 @@ export interface ButtonProps {
   title: string;
   containerStyles?: string;
   type?: "button" | "submit" | "reset" | undefined;
-  onClick?: MouseEventHandler<HTMLButtonElement> 
+  rightIcon?: string;
+  isDisable?: boolean;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
