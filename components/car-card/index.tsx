@@ -8,6 +8,7 @@ import Button from "../button";
 import { CarProps } from "./type/index.type";
 import { calculateCarRent } from "@/utils";
 import Image from "next/image";
+import CarDetailsCard from "../car-details-card";
 
 interface CarCardProps {
   car: CarProps;
@@ -78,6 +79,8 @@ function CarCard({ car }: CarCardProps) {
           />
         </div>
       </div>
+
+      <CarDetailsCard isOpen={isModalOpen} car={car} onCloseModal={() => setIsModalOpen(false)} />
     </div>
   );
 }
